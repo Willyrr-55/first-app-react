@@ -1,13 +1,15 @@
 import React from "react";
+import '../stylesheets/Card.css'
 
-function Card(){
+function Card(props){
   return (
     <div className="testimonial-container">
-      <img className="testomonial-image" alt="Fotografia de la card" src={require('../images/willy.jpeg')}/>   
+      <img className="testomonial-image" alt="Fotografia de la card" src={require('../images/principalPicture.jpg')}/>   
       <div className="testimonial-text-container">
-        <p className="testimonial-name">Willian Adonay Rosa Ramirez</p>
-        <p className="job-position">Software Engineer</p>
-        <p className="testimonial-text">Soy una persona apasionada al mundo del desarollo de software, me siento afortunado de pertenecer a esta industria porque me permite hacer cosas muy importantes y que peuden tener un impacto global, me apasiona desarrollar aplicaciones y estar en constante aprendizaje</p>
+        <p className="testimonial-name">{props.name}</p>
+        <p className="job-position">{props.positionJob} at {props.company}</p>
+        <hr/>
+        <p className="testimonial-text">{props.testimonial}</p>
       </div>
     </div>
   );

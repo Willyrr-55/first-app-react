@@ -1,0 +1,25 @@
+.container{
+  height: 214px;
+  width: 214px;
+}
+
+.content{
+  width:100%; height:100%; position: relative;
+}
+
+.imgSkill{
+  display: block;
+  transition:.5s;
+  object-fit:cover; width:100%; height: 100%; border-radius: .5rem; background-color: #F2F2F2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.imgSkill:hover{
+  transition: .5s;
+  opacity: .5;
+}
+
+.text{
+  font-family: Lato, sans-serif;
+  margin-top: 8px;
+}
